@@ -1,0 +1,56 @@
+```liquid
+<header class="site-header">
+
+  <div class="header-container">
+
+    <a href="{{ routes.root_url }}" class="logo">
+
+      {% if settings.logo != blank %}
+        <img
+          src="{{ settings.logo | image_url: width: 300 }}"
+          alt="{{ shop.name }}"
+          width="180"
+          height="180">
+      {% else %}
+        <span>GW Jigs & Lures</span>
+      {% endif %}
+
+    </a>
+
+    <nav class="main-nav">
+
+      <a href="/">Home</a>
+
+      <a href="/collections/all">Shop</a>
+
+      <a href="/pages/about">About</a>
+
+      <a href="/pages/contact">Contact</a>
+
+      <a href="/pages/youtube">YouTube</a>
+
+    </nav>
+
+    <div class="header-icons">
+
+      <a href="/search" aria-label="Search">
+        🔍
+      </a>
+
+      <a href="/cart" aria-label="Cart">
+        🛒
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": []
+}
+{% endschema %}
+```
