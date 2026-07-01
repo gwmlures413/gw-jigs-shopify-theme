@@ -1,0 +1,41 @@
+```liquid
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>
+    {% if page_title %}
+      {{ page_title }}
+    {% else %}
+      {{ shop.name }}
+    {% endif %}
+  </title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  {{ content_for_header }}
+
+  {{ 'style.css' | asset_url | stylesheet_tag }}
+
+</head>
+
+<body>
+
+  {% section 'header' %}
+
+  <main id="MainContent">
+    {{ content_for_layout }}
+  </main>
+
+  {% section 'footer' %}
+
+  {{ 'theme.js' | asset_url | script_tag }}
+
+</body>
+</html>
+```
