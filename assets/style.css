@@ -1,0 +1,168 @@
+```css
+/* ==========================
+   GW Jigs & Lures Theme V3
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#111;
+    color:#fff;
+    line-height:1.6;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* HEADER */
+
+.site-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(15,15,15,.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.header-container{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+}
+
+.logo img{
+    height:65px;
+    width:auto;
+}
+
+.main-nav{
+    display:flex;
+    gap:40px;
+}
+
+.main-nav a{
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+.main-nav a:hover{
+    color:#d32f2f;
+}
+
+.header-icons{
+    display:flex;
+    gap:20px;
+    font-size:24px;
+}
+
+.header-icons a:hover{
+    color:#d32f2f;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:#222;
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:800;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#d32f2f;
+    color:#fff;
+    padding:18px 42px;
+    border-radius:8px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#b71c1c;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    text-transform:uppercase;
+}
+
+@media(max-width:900px){
+
+.header-container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.main-nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:46px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+```
